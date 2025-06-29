@@ -28,7 +28,7 @@
     <div class="sidebar-content">
     <ul class="nav nav-secondary">
         <li class="nav-item active">
-        <a data-bs-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false"><i class="fas fa-home"></i><p>Dashboard</p></a>
+        <a href="/" class="collapsed" aria-expanded="false"><i class="fas fa-home"></i><p>Dashboard</p></a>
         </li>
         <li class="nav-section">
         <span class="sidebar-mini-icon">
@@ -37,32 +37,30 @@
         <h4 class="text-section">Components</h4>
         </li>
         <li class="nav-item">
-        <a data-bs-toggle="collapse" href="#base">
-            <i class="fas fa-layer-group"></i>
-            <p>Base</p>
-            <span class="caret"></span>
-        </a>
+            <a data-bs-toggle="collapse" href="#base"> <i class="fas fa-layer-group"></i> <p>Base</p> <span class="caret"></span> </a>
         </li>
         <li class="nav-item">
-        <a data-bs-toggle="collapse" href="#sidebarLayouts">
-            <i class="fas fa-th-list"></i>
-            <p>Sidebar Layouts</p>
-            <span class="caret"></span>
-        </a>
-        <div class="collapse" id="sidebarLayouts">
-            <ul class="nav nav-collapse">
-            <li>
-                <a href="sidebar-style-2.html">
-                <span class="sub-item">Sidebar Style 2</span>
-                </a>
-            </li>
-            <li>
-                <a href="icon-menu.html">
-                <span class="sub-item">Icon Menu</span>
-                </a>
-            </li>
-            </ul>
-        </div>
+            <a  href="/register"> <i class="fas fa-layer-group"></i> <p>Customer Registeration</p></a>
+        </li>
+        <li class="nav-item">
+            <a  href="/custview"> <i class="fas fa-layer-group"></i> <p>Customer Details</p></a>
+        </li>
+        <li class="nav-item">
+            <a data-bs-toggle="collapse" href="#sidebarLayouts"> <i class="fas fa-th-list"></i> <p>Sidebar Layouts</p> <span class="caret"></span></a>
+            <div class="collapse" id="sidebarLayouts">
+                <ul class="nav nav-collapse">
+                <li>
+                    <a href="sidebar-style-2.html">
+                    <span class="sub-item">Sidebar Style 2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="icon-menu.html">
+                    <span class="sub-item">Icon Menu</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
         </li>
         <li class="nav-item">
         <a data-bs-toggle="collapse" href="#forms">

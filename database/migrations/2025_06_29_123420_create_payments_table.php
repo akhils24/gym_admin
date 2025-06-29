@@ -11,15 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('customers', function (Blueprint $table) {
+        Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->bigInteger('phone');
-            $table->date('addate');
-            $table->date('dob');
-            $table->string('gender');
-            $table->boolean('status')->default(false);
+            $table->foreignId('customer_id')->constrained('customers')->onDelete('cascade');
+            $table->integer('amount');
+            $table->string('payment_method');
+            $table->string('validity');
+            $table->date('payment_date');
+            $table->date('expiry_date');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('customers');
+        Schema::dropIfExists('payments');
     }
 };
