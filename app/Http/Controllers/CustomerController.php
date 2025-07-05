@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\customer;
+use App\Models\payment;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
     // Dashboard
     public function show(Request $request){
-        return view("home");
+        $customers = Customer::latest()->take(7)->get();
+        $payments = payment::with('customer')->latest() ->take(7)->get();
+        return view("home",compact('customers','payments'));
     }
     // customer Registration page view
     public function regshow(Request $request){

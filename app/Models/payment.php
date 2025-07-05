@@ -17,7 +17,7 @@ class payment extends Model
         'expiry_date',
     ];
 
-    protected $table = "customers";
+    protected $table ="payments";
     
      public function customer()
     {
