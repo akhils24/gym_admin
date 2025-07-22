@@ -78,6 +78,6 @@
         </li>
         </ul>
     </div>
-    </nav>
+    </nav>  
     <!-- End Navbar -->
 </div>
